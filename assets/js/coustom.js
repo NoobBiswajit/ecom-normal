@@ -63,6 +63,7 @@ $(function () {
     });
 });
 // ============New product load more==============
+// ===========Toprated-product-load-more=========
 $(function () {
     $(".toprated").slice(0, 4).show();
     $("body").on('click touchstart', '.topretedProload', function (e) {
@@ -76,8 +77,9 @@ $(function () {
         // }, 500);
     });
 });
+// ===========Toprated-product-load-more=========
 
-
+// =========Menu drodwn=========
 jQuery(function ($) {
     $('.menu-btn').click(function () {
         $('.dropdown').toggleClass('expand')
