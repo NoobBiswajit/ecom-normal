@@ -210,25 +210,27 @@ nav {
 
     .nav-area {
         position: relative;
+        transition: .5s all ease;
 
     }
 
     .dropdown {
-        position: absolute;
-        width: 0;
-        top: 67px;
-        z-index: 111;
-        background: #222222;
-        padding: 10px;
-        left: 999999%;
-        right: 0;
+        display: none;
+        transition: .5s all ease;
+
+
     }
 
     .expand {
+        display: block;
         position: absolute;
-        width: 100%;
+        background: #222222;
         left: 0;
-        transition: .3s all ease;
+        width: 100%;
+        padding: 10px;
+        top: 67px;
+
+
     }
 }
 
