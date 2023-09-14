@@ -1,0 +1,238 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.addCart {
+    position: relative;
+}
+
+.adding_number {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222222;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    top: -5px;
+    right: -15px;
+
+}
+
+.addCart:hover .adding_number {
+    background: #fff;
+    cursor: pointer;
+}
+
+
+/* ========Nav-end========== */
+/* ==========Hero-slider start========= */
+.hero-slider {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 100px);
+}
+
+.hero-slider_info {
+    position: absolute;
+    top: 40%;
+}
+
+/* ==========Hero-slider end========= */
+
+
+/* ==========Sell Product start========= */
+.sell_product {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    position: relative;
+
+}
+
+.selDiscount {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background: rgba(0, 212, 240, 0.747);
+    z-index: 2;
+}
+
+.sel_product_cart {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+
+
+}
+
+.sel_product_cart:hover .selDiscount {
+    background: rgb(0, 212, 240);
+}
+
+
+.cart_option {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cart_option {
+    background: rgba(0, 212, 240, 0.603);
+    transition: .3s all ease;
+    border-radius: 0px 15px 15px 0px;
+    z-index: 2;
+}
+
+.cart_option:hover {
+    background: rgb(0, 212, 240);
+}
+
+.cart_icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+}
+
+.product_info {
+    position: absolute;
+    background: rgba(1, 21, 24, 0.404);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: 1s all ease;
+}
+
+.sel_product_cart:hover .product_info {
+    top: 0;
+}
+
+/* ==========Sell Product end========= */
+
+/* ==========Offer satrt========= */
+.offer_back {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: 11;
+}
+
+.offer_back::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(209, 68, 8, 0.438);
+    top: 0;
+    right: 0;
+    z-index: -1111;
+
+}
+
+.offer-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+}
+
+/* ==========Offet end========= */
+
+/* =============Subscribe-area start=========== */
+.subscrib_area {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+/* =============Subscribe-area End=========== */
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+}
+
+
+
+/* =============Responsive start============ */
+
+@media only screen and (max-width:1024px) {
+    .hero-slider {
+        height: 60vh;
+    }
+
+    .hero-slider_info {
+        top: 25%;
+        left: 5%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .hero-slider {
+        height: 25vh;
+    }
+
+    .hero-slider_info {
+        top: 25%;
+        left: 5%;
+    }
+
+
+    .nav-area {
+        position: relative;
+
+    }
+
+    .dropdown {
+        position: absolute;
+        width: 0;
+        top: 67px;
+        z-index: 111;
+        background: #222222;
+        padding: 10px;
+        left: 999999%;
+        right: 0;
+    }
+
+    .expand {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        transition: .3s all ease;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .hero-slider {
+        height: 28vh;
+    }
+
+    .hero-slider_info {
+        top: 25%;
+        left: 5%;
+    }
+}
+
+/* =============Responsive End============ */
