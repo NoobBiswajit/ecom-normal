@@ -123,13 +123,12 @@ body {
     top: 0;
 }
 
-
-.toprated {
-    display: none
+.new-product {
+    display: none;
 }
 
-.new-product {
-    display: none
+.toprated {
+    display: none;
 }
 
 /* ==========Sell Product end========= */
